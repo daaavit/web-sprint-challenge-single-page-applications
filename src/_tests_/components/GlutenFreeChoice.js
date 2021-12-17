@@ -10,7 +10,7 @@ export default function GlutenFreeChoice() {
         Choose up to 1.
       </div>
       <div className="toggleSwitch">
-        <Switch /> Gluten Free Costs "($+1.00)"
+        <Switch />  Gluten Free Costs "($+1.00)"
       </div>
     </div>
   );
