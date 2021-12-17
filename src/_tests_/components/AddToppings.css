@@ -1,0 +1,36 @@
+.addToppings {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.toppingsBackground {
+    background-color: aqua;
+    width: 500px;
+   padding: 10px;
+}
+
+.topppingOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.toppingWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 500px;
+    padding: 10px;
+}
+
+.toppingWrapper {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
