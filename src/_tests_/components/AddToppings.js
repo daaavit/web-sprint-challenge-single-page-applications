@@ -1,8 +1,15 @@
-import React from "react";
-import './AddToppings.css'
-
+import React, { useState } from "react";
+import "./AddToppings.css";
 
 export default function AddToppings() {
+  const [addToppings, setAddToppings] = useState();
+
+  const onChange = (e) => {
+    setAddToppings(e.target.value);
+  };
+
+  console.log({addToppings}, 'Toppings input')
+
   return (
     <div className="addToppings">
       <div className="toppingsBackground">
@@ -10,61 +17,135 @@ export default function AddToppings() {
         Chose up to 10.
       </div>
       <div className="toppingWrapper">
-      <div className="topppingOptions">
-        <label>
-          <input type="checkbox" />
-          Peperoni
-        </label>
-        <label>
-          <input type="checkbox" />
-          Sasuage
-        </label>
-        <label>
-          <input type="checkbox" />
-          Canadian Becon
-        </label>
-        <label>
-          <input type="checkbox" />
-          Spicy Italian Sasuage
-        </label>
-        <label>
-          <input type="checkbox" />
-          Grilled Chicken
-        </label>
-        <label>
-          <input type="checkbox" />
-          Onions
-        </label>
-        <label>
-          <input type="checkbox" />
-          Green Pepper
-        </label>
+        <div className="topppingOptions">
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Peperoni
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Sasuage
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Canadian Becon
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Spicy Italian Sasuage
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Grilled Chicken
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Onions
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Green Pepper
+          </label>
         </div>
         <div className="topppingOptions">
-        <label>
-          <input type="checkbox" />
-          Diced Tomato
-        </label>
-        <label>
-          <input type="checkbox" />
-          Black Olives
-        </label>   <label>
-          <input type="checkbox" />
-          Roasted Garilc
-        </label>
-        <label>
-          <input type="checkbox" />
-          Artichoke Hearts
-        </label>   <label>
-          <input type="checkbox" />
-          Three Cheese
-        </label>   <label>
-          <input type="checkbox" />
-          Pinaple
-        </label>   <label>
-          <input type="checkbox" />
-          Extra Cheese
-        </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Diced Tomato
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Black Olives
+          </label>{" "}
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Roasted Garilc
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Artichoke Hearts
+          </label>{" "}
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Three Cheese
+          </label>{" "}
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Pinaple
+          </label>{" "}
+          <label>
+            <input
+              type="checkbox"
+              value={1.0}
+              onChange={onChange}
+              name={"topping"}
+            />
+            Extra Cheese
+          </label>
         </div>
       </div>
     </div>
